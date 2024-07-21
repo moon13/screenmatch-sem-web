@@ -20,6 +20,7 @@ public class Principal {
     private ConverteDados conversor = new ConverteDados();
 
     private Scanner leitura = new Scanner(System.in);
+
     public void exibeMenu(){
         System.out.println("Digite o nome da série para a busca");
         String nomeSerie = leitura.nextLine();
@@ -43,6 +44,7 @@ public class Principal {
 //            }
 //        }
 
+        //refactoring
         temporadas.forEach(t -> t.episodios().
                      forEach(e -> System.out.println(e.titulo())));
 
